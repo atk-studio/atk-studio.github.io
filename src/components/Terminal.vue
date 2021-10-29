@@ -63,7 +63,7 @@ export default {
   height: 1.25rem;
   line-height: 1.25rem;
   vertical-align: middle;
-  background-color: rgb(55, 167, 70);
+  background-color: var(--bs-success);
   display: inline-block;
   margin-bottom: 3px;
   visibility: hidden;
