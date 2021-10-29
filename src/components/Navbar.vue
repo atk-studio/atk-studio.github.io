@@ -1,8 +1,10 @@
 <template>
   <div class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
+    <div class="container py-1">
       <span class="navbar-brand center">
-        <a href="/" class="navbar-brand">ATK Dev Studio</a>
+        <a href="/" class="navbar-brand"
+          ><img src="@/assets/images/logo.png" height="40" id="atk-logo"
+        /></a>
       </span>
 
       <button
@@ -16,7 +18,7 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarContent">
-        <terminal />
+        <terminal :title="title" class="mt-lg-0 mt-4" />
       </div>
     </div>
   </div>
@@ -26,7 +28,7 @@
 import Terminal from "./Terminal.vue";
 export default {
   name: "NavBar",
-  props: {},
+  props: { title: String },
   components: { Terminal },
 };
 </script>

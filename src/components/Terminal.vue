@@ -5,9 +5,9 @@
       <li class="nav-item" id="cmd-item" tabindex="0">
         <span href="#" id="command-line-wrapper">
           <span class="terminal-arrow">&gt;</span>
-          <span class="pwd"><b>$</b></span>
+          <span class="pwd">{{ title }}<b>$</b></span>
           <span id="autocomplete"></span>
-          <span id="command-line">{{ title }}</span>
+          <span id="command-line"></span>
           <span class="cursor"></span>
         </span>
       </li>
@@ -65,7 +65,6 @@ export default {
   vertical-align: middle;
   background-color: rgb(55, 167, 70);
   display: inline-block;
-  margin-left: -5px;
   margin-bottom: 3px;
   visibility: hidden;
 }

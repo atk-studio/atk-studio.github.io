@@ -1,4 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap");
+
 @font-face {
   font-family: Iosevka;
   src: url(../fonts/iosevka-medium.ttf);
+}
+body {
+  background-color: rgb(41, 42, 45);
+  color: rgb(187, 187, 187);
+  font-family: "Roboto Slab", serif;
 }
