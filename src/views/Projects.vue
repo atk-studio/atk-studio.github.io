@@ -1,13 +1,13 @@
 <template>
-  <nav-bar title="about-us" />
+  <nav-bar title="projects" />
   <div class="container my-5">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">About us</li>
+        <li class="breadcrumb-item active" aria-current="page">Projects</li>
       </ol>
     </nav>
-    <h1>About us</h1>
+    <h1>Our projects</h1>
   </div>
 </template>
 
