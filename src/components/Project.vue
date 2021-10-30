@@ -1,15 +1,20 @@
 <template>
   <div class="card lighter p-4 mb-3">
     <div class="row">
-      <h3>{{ title }}</h3>
-      <div class="flex-row d-flex align-items-center">
-        <template v-for="language in languages.split('|')" :key="language">
-          <div class="me-1 lang">{{ language }}</div>
-          <div
-            class="indicator me-3"
-            v-bind:style="{ backgroundColor: colors[language.toLowerCase()] }"
-          ></div>
-        </template>
+      <div class="col-12 col-md-5">
+        <h3 class="mb-2">{{ title }}</h3>
+        <div class="mb-2 mb-md-0 flex-row d-flex flex-wrap align-items-center">
+          <template v-for="language in languages.split('|')" :key="language">
+            <div class="me-1 lang">{{ language }}</div>
+            <div
+              class="indicator me-3"
+              v-bind:style="{ backgroundColor: colors[language.toLowerCase()] }"
+            ></div>
+          </template>
+        </div>
+      </div>
+      <div class="col-12 col-md-7 fs-5 align-items-center d-flex">
+        {{ description }}
       </div>
     </div>
   </div>
@@ -35,6 +40,7 @@ export default {
   props: {
     languages: String,
     title: String,
+    description: String,
   },
   name: "Project",
 };
@@ -42,9 +48,9 @@ export default {
 
 <style>
 .indicator {
-  width: 1.3rem;
-  height: 1.3rem;
-  border-radius: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 0.6rem;
 }
 
 .lang {
