@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="navbar navbar-expand-lg navbar-dark">
     <div class="container py-1">
       <span class="navbar-brand center">
         <a href="/" class="navbar-brand"
@@ -89,6 +89,10 @@ export default {
 </script>
 
 <style>
+.navbar {
+  background-color: var(--navbar-bg);
+}
+
 .navbar-toggler {
   border: none;
 }

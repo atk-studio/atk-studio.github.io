@@ -1,9 +1,18 @@
 <template>
-  <div class="card lighter p-4 mb-3">
+  <div class="py-4 px-3">
     <div class="row">
       <div class="col-12 col-md-5">
         <h3 class="mb-2">{{ title }}</h3>
-        <div class="mb-2 mb-md-0 flex-row d-flex flex-wrap align-items-center">
+        <div
+          class="
+            secondary-text
+            mb-2 mb-md-0
+            flex-row
+            d-flex
+            flex-wrap
+            align-items-center
+          "
+        >
           <template v-for="language in languages.split('|')" :key="language">
             <div class="me-1 lang">{{ language }}</div>
             <div
@@ -13,7 +22,9 @@
           </template>
         </div>
       </div>
-      <div class="col-12 col-md-7 fs-5 align-items-center d-flex">
+      <div
+        class="col-12 col-md-7 fs-5 align-items-center d-flex secondary-text"
+      >
         {{ description }}
       </div>
     </div>

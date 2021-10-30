@@ -32,7 +32,7 @@ export default {
   color: rgb(187, 187, 187);
   width: 235px;
   padding: 5px 5px;
-  background-color: #161616;
+  background-color: var(--terminal-bg);
   outline: none;
 }
 

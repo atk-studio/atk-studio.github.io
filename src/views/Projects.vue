@@ -16,6 +16,7 @@
           title="Diary56"
           description="Open-source digital diary for schools made with Python Django."
         />
+        <hr />
         <project
           languages="TypeScript"
           title="MathUp"
@@ -29,6 +30,7 @@
           title="Diary56 2.0"
           description="Updated and redefined open-source digital diary for schools made with Python Django."
         />
+        <hr />
         <project
           languages="Go"
           title="EPNM"
@@ -37,7 +39,7 @@
       </div>
       <div class="card p-3">
         <h2 class="text-center mb-3">📑 Future plans</h2>
-        <div class="text-center fs-4">
+        <div class="text-center fs-4 fst-italic secondary-text">
           The future is not something to predict.
         </div>
       </div>

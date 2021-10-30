@@ -11,16 +11,20 @@ body {
 }
 
 :root {
-  --background: rgb(42, 47, 53);
-  --text-color: rgb(202, 202, 202);
+  --background: #121212;
+  --text-color: rgba(255, 255, 255, 0.87);
+  --secondary-text: rgba(255, 255, 255, 0.6);
+  --navbar-bg: #252525;
+  --terminal-bg: #121212;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --card-bg-hover: rgba(255, 255, 255, 0.07);
+
   --font: "Roboto Slab", serif;
   --monospace-font: "Iosevka", monospace;
   --bs-body-bg: var(--background);
   --bs-body-color: var(--background);
-  --link-color: rgb(228, 228, 228);
-  --link-color-hover: rgb(255, 255, 255);
-  --card-bg: rgb(55, 58, 63);
-  --card-bg-hover: rgb(68, 71, 77);
+  --link-color: var(--secondary-text);
+  --link-color-hover: var(--text-color);
 
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -82,12 +86,13 @@ body {
 }
 
 [data-theme="light"] {
-  --background: #f0f0f0;
-  --text-color: rgb(27, 27, 27);
+  --background: #ffffff;
+  --text-color: #000000;
   --link-color: #0d6efd;
   --link-color-hover: #0a58ca;
-  --card-bg: #dbdbdb;
-  --card-bg-hover: #d0d0d0;
+  --card-bg: rgba(0, 0, 0, 0.07);
+  --card-bg-hover: rgba(0, 0, 0, 0.1);
+  --secondary-text: rgba(0, 0, 0, 0.6);
 }
 
 a {
@@ -107,18 +112,26 @@ a:hover {
   border: none;
 }
 
-.card.lighter {
-  background-color: var(--card-bg-hover);
-}
-
 .card.hover:hover {
   background-color: var(--card-bg-hover);
 }
 
-.display-1, .display-2, .display-3, .display-4 {
+.secondary-text {
+  color: var(--secondary-text);
+}
+
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
   font-weight: 700;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
 }
